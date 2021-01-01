@@ -1,0 +1,9 @@
+[Unit]
+Description=IP-block service
+
+[Service]
+ExecStart=/<location>/blocked.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
