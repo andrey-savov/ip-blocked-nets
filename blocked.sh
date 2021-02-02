@@ -26,6 +26,7 @@ ipset -A blocked 167.248.133.0/24  # CENSYS-ARIN-03
 ipset -A blocked 185.193.91.0/24
 ipset -A blocked 192.35.168.0/23  # CENSYS MICH-15324
 ipset -A blocked 193.27.228.0/23
+ipset -A blocked 194.147.140.0/24  # NetworkingAnalysis
 
 iptables -t raw -A PREROUTING -m set --match-set blocked src -j LOG
 iptables -t raw -A PREROUTING -m set --match-set blocked src -j DROP
