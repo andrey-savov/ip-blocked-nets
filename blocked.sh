@@ -11,6 +11,7 @@ ipset -A blocked 31.131.249.0/24  # Selectel - Russia
 ipset -A blocked 45.129.32.0/22  # IP Volume
 ipset -A blocked 45.146.164.0/23  # STARCRECIUM - Russia
 ipset -A blocked 45.146.166.0/23  # STARCRECIUM - Russia
+ipset -A blocked 45.155.205.0/24  # STARCRECIUM - Germany
 ipset -A blocked 54.39.100.0/23
 ipset -A blocked 74.120.14.0/24  # CENSYS-ARIN-02
 ipset -A blocked 78.128.113.0/24  # Miti2000 BG
