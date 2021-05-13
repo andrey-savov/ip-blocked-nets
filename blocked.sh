@@ -16,6 +16,7 @@ ipset -A blocked 45.146.166.0/23  # STARCRECIUM - Russia
 ipset -A blocked 45.155.205.0/24  # STARCRECIUM - Germany
 ipset -A blocked 54.39.100.0/23
 ipset -A blocked 74.120.14.0/24  # CENSYS-ARIN-02
+ipset -A blocked 75.119.128.0/19  # Contabo GmbH
 ipset -A blocked 78.128.113.0/24  # Miti2000 BG
 ipset -A blocked 84.38.184.0/23
 ipset -A blocked 88.218.17.243
