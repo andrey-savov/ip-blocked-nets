@@ -10,6 +10,7 @@ ipset -A blocked 5.188.206.0/24
 ipset -A blocked 23.148.145.0/24 # Quick Server Hosting LLC
 ipset -A blocked 31.131.249.0/24  # Selectel - Russia
 ipset -A blocked 45.129.32.0/22  # IP Volume
+ipset -A blocked 45.135.232.0/24  # CY-STARCRECIUM - Russia
 ipset -A blocked 45.146.164.0/23  # STARCRECIUM - Russia
 ipset -A blocked 45.146.166.0/23  # STARCRECIUM - Russia
 ipset -A blocked 45.155.205.0/24  # STARCRECIUM - Germany
