@@ -20,12 +20,15 @@ ipset -A blocked 75.119.128.0/19  # Contabo GmbH
 ipset -A blocked 78.128.113.0/24  # Miti2000 BG
 ipset -A blocked 84.38.184.0/23
 ipset -A blocked 88.218.17.243
+ipset -A blocked 89.248.165.0/24  # IP Volume
 ipset -A blocked 89.248.168.0/24
+ipset -A blocked 91.220.163.0/24  #  Zservers
 ipset -A blocked 92.63.197.0/24
 ipset -A blocked 94.102.51.0/24  # IP Volume
 ipset -A blocked 141.98.10.0/24
 ipset -A blocked 162.142.125.0/24  # CENSYS-ARIN-01
 ipset -A blocked 167.248.133.0/24  # CENSYS-ARIN-03
+ipset -A blocked 185.153.196.0/22  # RM Engineering
 ipset -A blocked 185.193.91.0/24
 ipset -A blocked 192.35.168.0/23  # CENSYS MICH-15324
 ipset -A blocked 193.27.228.0/23
