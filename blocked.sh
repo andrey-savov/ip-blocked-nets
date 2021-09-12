@@ -31,6 +31,7 @@ ipset -A blocked 162.142.125.0/24  # CENSYS-ARIN-01
 ipset -A blocked 167.248.133.0/24  # CENSYS-ARIN-03
 ipset -A blocked 185.153.196.0/22  # RM Engineering
 ipset -A blocked 185.193.91.0/24
+ipset -A blocked 185.217.0.0/22  # AS42237 AMATI FOUNDATION
 ipset -A blocked 192.35.168.0/23  # CENSYS MICH-15324
 ipset -A blocked 193.27.228.0/23
 ipset -A blocked 194.147.140.0/24  # NetworkingAnalysis
