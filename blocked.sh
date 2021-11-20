@@ -28,6 +28,9 @@ ipset -A blocked 92.63.197.0/24
 ipset -A blocked 94.102.51.0/24  # IP Volume
 ipset -A blocked 141.98.10.0/24
 ipset -A blocked 162.142.125.0/24  # CENSYS-ARIN-01
+ipset -A blocked 167.94.138.0/24  # CENSYS
+ipset -A blocked 167.94.145.0/24  # CENSYS
+ipset -A blocked 167.94.146.0/24  # CENSYS
 ipset -A blocked 167.248.133.0/24  # CENSYS-ARIN-03
 ipset -A blocked 185.153.196.0/22  # RM Engineering
 ipset -A blocked 185.193.91.0/24
