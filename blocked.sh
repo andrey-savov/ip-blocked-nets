@@ -53,14 +53,14 @@ ipset -A blocked 188.166.26.88/32
 ipset -A blocked 206.189.7.178/32
 ipset -A blocked 209.97.152.248/32
 
-147.78.47.0/24 # global-host AS209588
-124.220.0.0/14 # Tencent
-94.102.61.0/24 # Criminal IP
-209.141.32.0/19 # Ponynet
-123.160.0.0/14 # Maintnet China
-211.90.0.0/15 # China unicom
-211.92.0.0/14
-211.96.0.0/15
+ipset -A blocked 147.78.47.0/24 # global-host AS209588
+ipset -A blocked 124.220.0.0/14 # Tencent
+ipset -A blocked 94.102.61.0/24 # Criminal IP
+ipset -A blocked 209.141.32.0/19 # Ponynet
+ipset -A blocked 123.160.0.0/14 # Maintnet China
+ipset -A blocked 211.90.0.0/15 # China unicom
+ipset -A blocked 211.92.0.0/14
+ipset -A blocked 211.96.0.0/15
 
 iptables -t raw -A PREROUTING -m set --match-set blocked src -j LOG
 iptables -t raw -A PREROUTING -m set --match-set blocked src -j DROP
