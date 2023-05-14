@@ -14,6 +14,7 @@ ipset -A blocked 45.135.232.0/24  # CY-STARCRECIUM - Russia
 ipset -A blocked 45.146.164.0/23  # STARCRECIUM - Russia
 ipset -A blocked 45.146.166.0/23  # STARCRECIUM - Russia
 ipset -A blocked 45.155.205.0/24  # STARCRECIUM - Germany
+ipset -A blocked 185.11.61.0/24 # STARCRECIUM - Cyprus
 ipset -A blocked 45.227.254.0/24  # AS267784 Flyservers S.A.
 ipset -A blocked 54.39.100.0/23
 ipset -A blocked 74.120.14.0/24  # CENSYS-ARIN-02
@@ -38,6 +39,28 @@ ipset -A blocked 185.217.0.0/22  # AS42237 AMATI FOUNDATION
 ipset -A blocked 192.35.168.0/23  # CENSYS MICH-15324
 ipset -A blocked 193.27.228.0/23
 ipset -A blocked 194.147.140.0/24  # NetworkingAnalysis
+
+ipset -A blocked 87.236.176.0/24 # internet-measurement
+ipset -A blocked 193.163.125.0/24
+ipset -A blocked 68.183.53.77/32
+ipset -A blocked 104.248.203.191/32
+ipset -A blocked 104.248.204.195/32
+ipset -A blocked 142.93.191.98/32
+ipset -A blocked 157.245.216.203/32
+ipset -A blocked 165.22.39.64/32
+ipset -A blocked 167.99.209.184/32
+ipset -A blocked 188.166.26.88/32
+ipset -A blocked 206.189.7.178/32
+ipset -A blocked 209.97.152.248/32
+
+147.78.47.0/24 # global-host AS209588
+124.220.0.0/14 # Tencent
+94.102.61.0/24 # Criminal IP
+209.141.32.0/19 # Ponynet
+123.160.0.0/14 # Maintnet China
+211.90.0.0/15 # China unicom
+211.92.0.0/14
+211.96.0.0/15
 
 iptables -t raw -A PREROUTING -m set --match-set blocked src -j LOG
 iptables -t raw -A PREROUTING -m set --match-set blocked src -j DROP
