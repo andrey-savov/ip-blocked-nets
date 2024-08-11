@@ -96,7 +96,9 @@ ipset -A blocked 91.240.118.0/24 # Chang Way Technologies Co. Limited
 ipset -A blocked 92.63.197.0/24
 ipset -A blocked 94.102.51.0/24  # IP Volume
 ipset -A blocked 94.102.61.0/24 # AS202425 - IP Volume inc security.criminalip.com
-
+ipset -A blocked 199.45.154.0/24 # Censys
+ipset -A blocked 199.45.155.0/24 # Censys
+ipset -A blocked 206.168.34.0/24 # Censys
 
 iptables -t raw -A PREROUTING -m set --match-set blocked src -j LOG
 iptables -t raw -A PREROUTING -m set --match-set blocked src -j DROP
